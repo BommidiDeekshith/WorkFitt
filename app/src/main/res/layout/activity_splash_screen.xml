@@ -20,7 +20,16 @@
         android:layout_marginTop="16dp"
         android:layout_marginRight="16dp"
         android:src="@drawable/logo_fire"
+        android:transitionName="logo_move_up"
         tools:ignore="InvalidId" />
+    <ImageView
+        android:id="@+id/round_logo"
+        android:transitionName="logo_move_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_round"
+        android:visibility="gone">
+    </ImageView>
 
     <ImageView
         android:id="@+id/dumbell_logo"
@@ -28,8 +37,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="2dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="32dp"
-        android:src="@drawable/logo_dumbell" />
+        android:src="@drawable/logo_dumbell"
+        android:transitionName="logo_move_up"/>
+    <ImageView
+        android:id="@+id/fakeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ImageView>
 </LinearLayout>

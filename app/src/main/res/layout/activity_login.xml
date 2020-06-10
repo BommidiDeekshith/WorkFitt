@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/round_logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="16dp"
+            android:transitionName="logo_move_up"
+            android:src="@drawable/logo_round">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/workfit_branding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#fece2f"
+            android:fontFamily="@font/acme"
+            android:gravity="center"
+            android:text=" WORKFITT "
+            android:textColor="#000000"
+            android:textSize="40sp">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/signin_option1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/acme"
+            android:text="Sign In to continue..."
+            android:textColor="#b8b8b8"
+            android:textSize="25sp">
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_id"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#808080"
+                android:fontFamily="@font/acme"
+                android:hint="Email Id"
+                android:textColor="#ffffff"
+                android:textSize="18sp">
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password"
+            style="@style/TextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#808080"
+                android:fontFamily="@font/acme"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="#ffffff"
+                android:textSize="18sp">
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/acme"
+            android:gravity="center"
+            android:text="FORGOT PASSWORD ?"
+            android:textColor="#b8b8b8"
+            android:textSize="15sp">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#ed7a17"
+            android:fontFamily="@font/acme"
+            android:text="login"
+            android:textSize="15sp">
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New User?  Create an Account"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+            android:textSize="18sp"
+            android:fontFamily="@font/acme"
+            android:layout_gravity="center"
+            >
+        </Button>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="8dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="or sign in using"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:fontFamily="@font/acme">
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/signin_option2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <ImageView
+            android:layout_marginRight="8dp"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_weight="50"
+            android:src="@drawable/google_signin_logo"
+            android:clickable="true">
+        </ImageView>
+
+        <ImageView
+            android:layout_marginLeft="8dp"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_weight="50"
+            android:src="@drawable/facebook_signin_logo">
+        </ImageView>
+
+    </LinearLayout>
+</LinearLayout>

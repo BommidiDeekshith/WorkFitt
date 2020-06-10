@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "462456299218",
+    "firebase_url": "https://workfitt-f6be4.firebaseio.com",
+    "project_id": "workfitt-f6be4",
+    "storage_bucket": "workfitt-f6be4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462456299218:android:44be98ead57ada3162970b",
+        "android_client_info": {
+          "package_name": "com.example.workfitt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "462456299218-41g892q8gk4bgmkol9hbpom95vgtfl1d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.workfitt",
+            "certificate_hash": "85e537afa53648fc817948a950c42023fb0fd30f"
+          }
+        },
+        {
+          "client_id": "462456299218-hic8t848noj4kdu50264l0hr6cbvue24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUBD-bi1UiJnVGFv5QfM2BGwnLaZypo-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "462456299218-hic8t848noj4kdu50264l0hr6cbvue24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
