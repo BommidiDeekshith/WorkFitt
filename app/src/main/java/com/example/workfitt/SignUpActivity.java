@@ -27,7 +27,7 @@ public class SignUpActivity extends AppCompatActivity implements DatePickerDialo
         final Map<String,Integer> month_days = new HashMap<String, Integer>();
         for(String month : getResources().getStringArray(R.array.months)){
             if(month.equals("FEB")){
-
+//                month_days.put(month,30);
             }
             else if(month.equals("APR") || month.equals("JUN") || month.equals("SEP") || month.equals("NOV")){
                 month_days.put(month,30);
@@ -135,7 +135,7 @@ public class SignUpActivity extends AppCompatActivity implements DatePickerDialo
                     else dates_array[dt] = String.valueOf(dt);
                 }
                 ArrayAdapter<String> date_adapter = new ArrayAdapter<String>(this, R.layout.spinner_item, dates_array);
-                dob_date.setAdapter(date_adapter);
+//                dob_date.setAdapter(date_adapter);
             }
 
             else{
@@ -147,7 +147,7 @@ public class SignUpActivity extends AppCompatActivity implements DatePickerDialo
                     else dates_array[dt] = String.valueOf(dt);
                 }
                 ArrayAdapter<String> date_adapter = new ArrayAdapter<String>(this, R.layout.spinner_item, dates_array);
-                dob_date.setAdapter(date_adapter);
+//                dob_date.setAdapter(date_adapter); // Newly Commented for Calendar Section
             }
             dob_date.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                 @Override
@@ -176,8 +176,10 @@ public class SignUpActivity extends AppCompatActivity implements DatePickerDialo
 
     @Override
     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) { //triggers when date is selected
-        dob_year.setSelection(1);//index needs to be calculated and passed accordingly as argument
+        int currentYear = Calendar.getInstance().get(Calendar.YEAR);
+        dob_year.setSelection(151-(currentYear-year));//index needs to be calculated and passed accordingly as arguments
         dob_month.setSelection(month+1);
-        dob_date.setSelection(dayOfMonth); //small bug here
+        dob_date.setSelection(dayOfMonth);//small bug here
+
     }
 }
