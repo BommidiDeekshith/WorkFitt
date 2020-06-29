@@ -32,9 +32,6 @@ public class SplashScreen extends AppCompatActivity {
         fakeView = findViewById(R.id.fakeView);
         fire_Logo.setAnimation(topAnimation);
         dumbell_Logo.setAnimation(bottomAnimation);
-//        fire_Logo.setVisibility(View.GONE);
-//        dumbell_Logo.setVisibility(View.GONE);
-        //round_logo.setVisibility(View.VISIBLE);
         new Handler().postDelayed(new Runnable() {
             @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override
@@ -43,7 +40,7 @@ public class SplashScreen extends AppCompatActivity {
                 Pair[] pairs = new Pair[3];
                 pairs[0] = new Pair<View,String>(fire_Logo,"logo_move_up");
                 pairs[1] = new Pair<View,String>(dumbell_Logo,"logo_move_up");
-                pairs[2] = new Pair<View,String>(fakeView,"logo_move_up");
+                pairs[2] = new Pair<View,String>(fakeView,"logo_move_up"); //just to ensure that logo's don't push down before going up
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
                     ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(SplashScreen.this,pairs);
                     startActivity(intent,options.toBundle());

@@ -2,9 +2,12 @@ package com.example.workfitt;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -14,6 +17,7 @@ public class LoginActivity extends AppCompatActivity {
     TextView workfitt_branding;
     ImageView round_logo;
     LinearLayout signin_layout1,signin_layout2;
+    Button signup_btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,5 +31,14 @@ public class LoginActivity extends AppCompatActivity {
         workfitt_branding.setAnimation(slideInFromTop);
         signin_layout1.setAnimation(fadeIn);
         signin_layout2.setAnimation(fadeIn);
+
+        signup_btn = findViewById(R.id.signup_button);
+        signup_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

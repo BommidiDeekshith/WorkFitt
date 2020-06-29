@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">WorkFitt</string>
+    <string name="signup"> <u>"New User?  Create an Account"</u> </string>
+    <string name="sign_in_to_continue">Sign In to continue...</string>
+    <string name="forgot_password">FORGOT PASSWORD ?</string>
+
+    <string-array name="months">
+        <item>MM</item>
+        <item>JAN</item>
+        <item>FEB</item>
+        <item>MAR</item>
+        <item>APR</item>
+        <item>MAY</item>
+        <item>JUN</item>
+        <item>JUL</item>
+        <item>AUG</item>
+        <item>SEP</item>
+        <item>OCT</item>
+        <item>NOV</item>
+        <item>DEC</item>
+    </string-array>
+
 </resources>
